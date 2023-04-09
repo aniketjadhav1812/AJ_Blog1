@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>NEW WEBSITE</title>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo"><a href="./">AJ_<span>Blog</span></a></div>
+                <ul id="sidemenu">
+                    <li><a class="menu-btn active" href="./" onclick="addclass()">Home</a></li>
+                    <li><a class="menu-btn" href="#about" onclick="addclass()">About</a></li>
+                    <li><a class="menu-btn" href="#projects" onclick="addclass()">Projects</a></li>
+                    <li><a class="menu-btn" href="#contact" onclick="addclass()">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" id="none" onclick="openmenu()"></i>
+
+            </nav>
+            <div class="text1">Hello, Myself</div>
+            <div class="text2">Aniket Jadhav</div>
+            <div class="text3">I'm <span id="typing-1"></span></div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="content">
+                <div class="col-1">
+                    <img src="img.jpg">
+                </div>
+                <div class="col-2">
+                    <div class="title">
+                        About
+                    </div>
+                    <div class="sub-titles">
+                        <p class="tablinks active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tablinks" onclick="opentab('experience')">Experience</p>
+                        <p class="tablinks" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia aperiam nobis officia
+                            impedit, dicta labore omnis! Repellendus, reiciendis! Necessitatibus, excepturi
+                            reprehenderit error cumque a, esse tempore quo saepe repudiandae porro eligendi ullam
+                            explicabo quaerat?
+                        </p>
+                    </div>
+                    <div class="tab-content" id="experience">
+                        <ul>
+                            <li>Web Development<br><span>Experience of 3-4 months</span></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia aperiam nobis officia
+                            impedit, dicta labore omnis! Repellendus, reiciendis! Necessitatibus, excepturi
+                            reprehenderit error cumque a, esse tempore quo saepe repudiandae porro eligendi ullam
+                            explicabo quaerat?
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="projects">
+        <div class="container">
+            <div class="title">
+                Projects
+            </div>
+            <div class="program-list">
+                <div class="program">
+                    <img src="/js_img.jpg" alt="javaScript">
+                    <div class="layer">
+                        <h3>GAME - Guess the number.</h3>
+                        <p>This is a basic game created using JavaScript.In this game you have to guess number between 1
+                            to 100.
+                        </p>
+                        <a href="https://replit.com/@AniketJadhav17/Guess-The-Number?v=1" target="blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="program">
+                    <img src="/C_img.jpg" alt="javaScript">
+                    <div class="layer">
+                        <h3>Matrix</h3>
+                        <p>This is a 'C Program' for performing operations on matrix.<br>
+                            <span>Note:-This program only runs in "VS CODE With MinGW "compiler.</span>
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="content">
+                <div class="contact-left">
+                    <h1>Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>aniketjadhav6134@gmail.com</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                   <form name="submit-to-google-sheet">
+                       <input type="text" name="Name" placeholder="Your Name" required>
+                       <input type="email" name="email" placeholder="Your Email" required>
+                       <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                   </form> 
+                   <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Created by <a href="./">AJ_Blog</a> | Copyright &copy; 2023. All rights reseverd.</p>
+        </div>
+    </div>
+      
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/4f309e4907.js" crossorigin="anonymous"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxRm9GsR6yzCXptLZ6g2YItq0dobQjzwSbAzZf-RamU6yEeDU52odJny4UdWTLmbtaT/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(() => {
+                    msg.innerHTML= ""
+                }, 3000);
+                form.reset()
+        })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+
+</html>
