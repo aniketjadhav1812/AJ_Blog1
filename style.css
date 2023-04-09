@@ -31,11 +31,16 @@ body{
     
 }
 nav{
+    position: initial;
     display: flex;
     text-decoration: none;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
+
+}
+.container.sticky{
+    background-color: crimson;
 
 }
 
@@ -206,6 +211,46 @@ nav ul li{
     grid-template-columns: repeat(auto-fit, minmax(250px));
 }
 
+.line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+    animation-name: animate;
+    animation-duration: 0.5s;
+}
+.bars .info{
+    margin: 5px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.bars .line::before{
+    content: "";
+    bottom: 0px;
+    left: 0;
+    height: 100%;
+    background-color: #bd0f0f;
+    position: absolute;
+    transition: width 0.5s;
+}
+.html::before{
+    width: 90%;
+}
+.css::before{
+    width: 70%;
+}
+.js::before{
+    width: 40%;
+}
+@keyframes animate {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
 
 #projects .title{
     font-size: 48px;
@@ -451,5 +496,9 @@ nav .fa-solid{
     .copyright p{
         font-size: 14px;
         margin: auto 10px;
+    }
+    .navbar.container.sticky{
+        position: fixed;
+        background-color: crimson;
     }
 }
