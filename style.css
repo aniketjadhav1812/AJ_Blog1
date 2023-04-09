@@ -388,7 +388,7 @@ nav .fa-solid{
         margin-left: 2vw;
     }
     nav .fa-solid{
-        position: absolute;
+        position: fixed;
         top:25px;
         left:90vw;
         cursor: pointer;
