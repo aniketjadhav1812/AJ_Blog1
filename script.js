@@ -31,7 +31,7 @@ var sidemenu = document.getElementById('sidemenu');
 
 const openmenu = () => {
     sidemenu.style.left = "0vw";
-    document.getElementById('none').style.left = "110vw";
+    document.getElementById('none').style.left = "-10vw";
 }
 
 const closemenu = () => {
