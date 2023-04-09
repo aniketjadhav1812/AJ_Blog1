@@ -204,6 +204,7 @@ nav ul li{
     display: block;
 }
 
+
 .line{
     height: 5px;
     width: 100%;
@@ -351,6 +352,12 @@ nav ul li{
 .social-icons a:hover{
     color: crimson;
     transform: translateY(-5px);
+}
+.social-icons a span{
+    font-size: 16px;
+    color: crimson;
+    text-align: justify;
+    text-decoration: solid crimson underline;
 }
 
 .contact-right{
