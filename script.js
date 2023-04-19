@@ -4,7 +4,7 @@ var typed = new Typed('#typing-1', {
     backspeed: 40,
     loop: true,
 });
-
+var sidemenu = document.getElementById('sidemenu');
 var menubtns = document.getElementsByClassName("menu-btn");
 const addclass = () => {
     for (const menubtn of menubtns) {
@@ -12,6 +12,7 @@ const addclass = () => {
     }
 
     event.currentTarget.classList.add("active");
+    sidemenu.style.left = "-100vw";
 }
 
 var tablinks = document.getElementsByClassName("tablinks");
@@ -26,8 +27,6 @@ const opentab = (tabname) => {
     event.currentTarget.classList.add("active-link");
     document.getElementById(tabname).classList.add("active-tab");
 }
-
-var sidemenu = document.getElementById('sidemenu');
 
 const openmenu = () => {
     sidemenu.style.left = "0vw";
