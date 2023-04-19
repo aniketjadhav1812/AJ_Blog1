@@ -13,6 +13,7 @@ const addclass = () => {
 
     event.currentTarget.classList.add("active");
     sidemenu.style.left = "-100vw";
+    document.getElementById('none').style.left = "90vw";
 }
 
 var tablinks = document.getElementsByClassName("tablinks");
