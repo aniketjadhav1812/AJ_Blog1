@@ -39,6 +39,3 @@ const closemenu = () => {
     document.getElementById('none').style.left = "90vw";
 }
 
-const warn =() => {
-    alert("Link is under development");
-}
