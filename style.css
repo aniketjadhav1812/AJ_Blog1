@@ -335,10 +335,10 @@ nav ul li{
     transition: all 0.2s ease-in;
 }
 .contact-left p a{
-    color : crimson;
+    color : white;
 }
 .contact-left p:hover{
-        color: white;
+        color: crimson;
         transform: translateY(-5px);
 }
 .contact-left p i{
