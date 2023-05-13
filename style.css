@@ -330,10 +330,14 @@ nav ul li{
 .contact-right{
     flex-basis: 60%;
 }
-.contact-left p{
+.contact-left p a{
     margin-top: 30px;
     color : crimson;
     transform: translateY(-5px);
+}
+.contact-left p a:hover{
+        color: white;
+        transform: translateY(-5px);
 }
 .contact-left p i{
     color: crimson;
