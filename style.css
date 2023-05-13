@@ -494,10 +494,10 @@ nav .fa-solid{
     }
     .contact-left p a{
         font-size: 18px;
-        color : white;
+        color: white;
     }
-    .contact-left p a:hover{
-        color : crimson;
+    .contact-left p:hover{
+        color: crimson;
         transform: translateY(-5px);
     }
     .copyright p{
