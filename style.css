@@ -333,15 +333,11 @@ nav ul li{
 .contact-left p{
     margin-top: 30px;
     transition: all 0.2s ease-in;
-}
-.contact-left p a{
     color : white;
 }
 .contact-left p:hover{
+        color: crimson;
         transform: translateY(-5px);
-}
-.contact-left p a:hover{
-    color: crimson;
 }
 .contact-left p i{
     color: crimson;
