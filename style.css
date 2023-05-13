@@ -492,9 +492,9 @@ nav .fa-solid{
     .contact-left, .contact-right{
         flex-basis: 100%;
     }
-    .contact-left p {
+    .contact-left p a{
         font-size: 18px;
-        
+        color : white;
     }
     .contact-left p a:hover{
         color : crimson;
